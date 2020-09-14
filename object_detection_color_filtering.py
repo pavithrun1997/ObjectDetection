@@ -63,8 +63,8 @@ def detect_ball(frame):
 
 
 def main():
-    video_capture = cv2.VideoCapture(0)                                ## This code could be run on live video
-    #video_capture = cv2.VideoCapture('video/tennis-ball-video.mp4')     ## which is connected to the device on which
+    #video_capture = cv2.VideoCapture(0)                                ## This code could be run on live video
+    video_capture = cv2.VideoCapture('video/tennis-ball-video.mp4')     ## which is connected to the device on which
     while(True):                                                        ## this script is run just comment/uncomment the necessary line
         ret, frame = video_capture.read()
         #cv2.imshow("H",frame)
